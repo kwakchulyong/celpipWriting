@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>CELPIP-General Sample Test - Writing Test</title>
+<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]--> 
+
+<style>
+/* common */
+html,body{width:100%;height:100%}
+html{overflow-y:scroll}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button{margin:0;padding:0}
+body,h1,h2,h3,h4,input,button{font-family:NanumGothicWeb,verdana,dotum,Helvetica,sans-serif;font-size:13px;color:#383d41}
+body{background-color:#fff;*word-break:break-all;-ms-word-break:break-all}
+img,fieldset,iframe{border:0 none}
+li{list-style:none}
+figure {border: 10px solid transparent; padding: 15px;}
+
+/* layout */
+#wrap{width:1000px;margin:0 auto}
+section{float:left;width:1000px; height:1000px;border:1px solid #ccc;line-height:20px}
+
+</style>
+
+<script src="js/questions.js"></script>
+<script src="js/common.js"></script>
+
+<script>
+
+</script>
+
+
+</head>
+
+<body onload="onload();">
+<div id="wrap">
+	<section>
+		<article>
+			<table style="width:1000px; margin-top:40px;">
+				<tr style="background-color: #f2f2f2; height:50px;">
+					<th style="width:500px; text-align: left; padding-left:5px;" ><span id="questionTitle"></span></th>
+					<th style="text-align: right;">Time remaining: <span id="timeRemaining"></span> Minutes &nbsp; <button onclick="next();">NEXT</button>
+					</th>
+				</tr>
+				<tr>
+					<td style="vertical-align: top;"><span style="font-size:18px;">! Read the following information.</span><br/><br/>
+<span id="questionLeft"></span>
+					</td>
+					<td><span id="questionRight" style="font-size:18px;"></span><br/><br/>
+<span id="questionDetail"></span>
+<br/>
+<form name="insertFrm"> 
+<textarea id="inputAnswer" name="inputAnswer" style="width:100%;border:1;overflow:visible;text-overflow:ellipsis;" rows=30 onkeyup="len_chk()"></textarea>
+</form>
+<br/><span id="countWords"></span> words <button onclick="download();">download</button>
+</td>
+				</tr>
+			</table>
+
+		</article>
+	</section>
+</div>
+</body>
+</html>
